@@ -1,7 +1,35 @@
-# vt-memorygame
+# np-memorygame
 NoPixel 3.0 Inspired Thermite Game
 
-# VT-Memorygame
+# Usage
+Put the folder in your resources and start in resources.cfg
+``ensure np-memory``
+
+# How to use export
+```
+    -- correctBlocks = Number of correct blocks the player needs to click
+    -- incorrectBlocks = number of incorrect blocks after which the game will fail
+    -- timetoShow = time in secs for which the right blocks will be shown
+    -- timetoLose = maximum time after timetoshow expires for player to select the right blocks
+ exports["np-memory"]:thermiteminigame(10, 3, 3, 10,
+    function() -- success
+        print("success")
+    end,
+    function() -- failure
+        print("failure")
+    end)
+```
+
+# Discord
+https://discord.gg/Dnthwv6xkE
+
+# Tebex
+https://vank1ta.tebex.io
+
+# Youtube
+https://www.youtube.com/@vank1ta671
+
+# VT-Developments
 Copyright (C) 2022 VT Development's
 
 This program is free software: you can redistribute it and/or modify

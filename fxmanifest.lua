@@ -1,12 +1,9 @@
-fx_version 'adamant'
-
+fx_version 'cerulean'
 game 'gta5'
+
 author "Snipe edit style VT Developmtnet's"
 description 'Thermite Game Like NoPixel'
-version '1.0.1'
-server_scripts {
-  --'server/server.lua',
-}
+version '1.0.2'
 
 client_scripts {
   'client/main.lua',
@@ -21,3 +18,5 @@ files {
   'html/style.css',
   'html/app.js'
 }
+
+lua54 'yes'

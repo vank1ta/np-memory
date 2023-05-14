@@ -1,4 +1,3 @@
-
 local successCb
 local failCb
 local resultReceived = false
@@ -15,8 +14,7 @@ RegisterNUICallback('ThermiteResult', function(data, cb)
 end)
 
 RegisterCommand('thermite', function(source, args)
-    -- Please check the parameters below for exports
-    exports["vt-memorygame"]:thermiteminigame(10, 3, 3, 10,
+    exports["np-memory"]:thermiteminigame(5, 3, 3, 10,
     function() -- success
         print("success")
     end,
