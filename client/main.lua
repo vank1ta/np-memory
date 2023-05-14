@@ -14,7 +14,7 @@ RegisterNUICallback('ThermiteResult', function(data, cb)
 end)
 
 RegisterCommand('thermite', function(source, args)
-    exports["np-memory"]:thermiteminigame(5, 3, 3, 10,
+    exports["np-memory"]:Thermite(5, 3, 3, 10,
     function() -- success
         print("success")
     end,
@@ -23,7 +23,7 @@ RegisterCommand('thermite', function(source, args)
     end)
 end)
 
-exports('thermiteminigame', function(correctBlocks, incorrectBlocks, timetoShow, timetoLose, success, fail)
+exports('Thermite', function(correctBlocks, incorrectBlocks, timetoShow, timetoLose, success, fail)
     -- correctBlocks = Number of correct blocks the player needs to click
     -- incorrectBlocks = number of incorrect blocks after which the game will fail
     -- timetoShow = time in secs for which the right blocks will be shown
