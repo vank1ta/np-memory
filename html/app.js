@@ -108,7 +108,7 @@ function checkWinOrLost() {
         hideAllBlocks()
         window.activateClicking = false;
         $(".container").hide()
-        $.post('http://np-memory/ThermiteResult', JSON.stringify({
+        $.post('https://np-memory/ThermiteResult', JSON.stringify({
             success: true
         }));
     }
@@ -116,7 +116,7 @@ function checkWinOrLost() {
         hideAllBlocks();
         $(".container").hide()
         window.activateClicking = false;
-        $.post('http://np-memory/ThermiteResult', JSON.stringify({
+        $.post('https://np-memory/ThermiteResult', JSON.stringify({
             success: false
         }));
     }
@@ -136,7 +136,7 @@ function isGameForeited() {
         hideAllBlocks();
         $(".container").hide()
         window.activateClicking = false;
-        $.post('http://np-memory/ThermiteResult', JSON.stringify({
+        $.post('https://np-memory/ThermiteResult', JSON.stringify({
             success: false
         }));
     }
